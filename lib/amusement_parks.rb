@@ -46,7 +46,7 @@ class Parks
 
   def by_id
     parks_by_id = @parks.group_by{|id|id[:id]}
-    parks_by_id.map
+    parks_by_id.collect
   end
 
   def by_country
